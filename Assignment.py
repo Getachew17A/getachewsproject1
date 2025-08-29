@@ -1,30 +1,25 @@
-# Ask the user for two numbers
-x = float(input("Enter the first number to add:"))
-y = float(input("enter the second number to add"))
+my_list = []
 
-# Ask the user for the operation
-Operation = input("Enter an operation(+, -, *, /): ")
+# Step 2: Append elements 10, 20, 30, 40
+my_list.append(10)
+my_list.append(20)
+my_list.append(30)
+my_list.append(40)
 
-# perform the operation and print the result
-if Operation == '+':
-    result = x + y
-    print(f"{x} + {y} = {result}")
-elif Operation == '-':
-    result = x - y
-    print(f"{x} - {y} = {result}")
-elif Operation == '*':
-    result = x * y
-    print(f"{x} * {y} = {result}")
-elif Operation == '/':
-    if y !=0:
-        result = x / y
-        print(f"{x} / {y} = {result}")
-    else:
-        print("Error: Division by Zero is not allowed")
-        
-else:
-    print("invalid operation. Please Enter one of +, -, *, /.")
-    
-            
+# Step 3: Insert 15 at the second position (index 1)
+my_list.insert(1, 15)
 
-print("this is my first code")
+# Step 4: Extend with another list [50, 60, 70]
+my_list.extend([50, 60, 70])
+
+# Step 5: Remove the last element
+my_list.pop()
+
+# Step 6: Sort the list in ascending order
+my_list.sort()
+
+# Step 7: Find and print the index of value 30
+index_of_30 = my_list.index(30)
+
+print("Final List:", my_list)
+print("Index of 30:", index_of_30)
